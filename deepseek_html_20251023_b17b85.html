@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Engineering MCQ Quiz - LDCE AEE Exam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Electrical Engineering MCQ Quiz</h1>
+            <p class="subtitle">LDCE AEE Promotion Exam Preparation - 1000 Questions</p>
+            <div class="topics">
+                <span class="topic-tag">Power Electronics</span>
+                <span class="topic-tag">TRS</span>
+                <span class="topic-tag">TRD</span>
+                <span class="topic-tag">OHE</span>
+                <span class="topic-tag">Transformers</span>
+                <span class="topic-tag">Relays</span>
+                <span class="topic-tag">Diodes & Thyristors</span>
+                <span class="topic-tag">Circuit Protection</span>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value" id="total-questions">1000</div>
+                    <div class="stat-label">Total Questions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="answered">0</div>
+                    <div class="stat-label">Answered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="correct">0</div>
+                    <div class="stat-label">Correct</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="score">0%</div>
+                    <div class="stat-label">Score</div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="quiz-container">
+            <div class="category-filter" id="category-filter">
+                <!-- Categories will be populated by JavaScript -->
+            </div>
+            
+            <div class="timer" id="timer">Time: 00:00:00</div>
+            
+            <div class="quiz-header">
+                <div class="question-count">Question <span id="current-question">1</span> of <span id="total-display">1000</span></div>
+                <div class="score-display">Score: <span id="current-score">0</span></div>
+                <button class="bookmark-btn" id="bookmark-btn">☆</button>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress" id="progress-bar"></div>
+                </div>
+                <div class="progress-text">
+                    <span>0%</span>
+                    <span id="progress-percent">0%</span>
+                </div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-number" id="question-topic">Power Electronics</div>
+                <div class="question-text" id="question-text">Loading question...</div>
+                
+                <div class="options-container" id="options-container">
+                    <!-- Options will be populated by JavaScript -->
+                </div>
+                
+                <div class="explanation" id="explanation">
+                    <div class="explanation-title">Explanation:</div>
+                    <div id="explanation-text"></div>
+                </div>
+            </div>
+            
+            <div class="bookmarked-questions" id="bookmarked-questions">
+                <h3>Bookmarked Questions</h3>
+                <ul class="bookmarked-list" id="bookmarked-list">
+                    <!-- Bookmarked questions will be populated by JavaScript -->
+                </ul>
+            </div>
+            
+            <div class="navigation">
+                <button class="btn-prev" id="prev-btn" disabled>Previous</button>
+                <button class="btn-next" id="next-btn">Next</button>
+                <button class="btn-submit" id="submit-btn" style="display: none;">Submit Quiz</button>
+            </div>
+        </div>
+        
+        <div class="result-container" id="result-container">
+            <h2>Quiz Completed!</h2>
+            <div class="score" id="final-score">0/1000</div>
+            <div class="score-text" id="score-text">Well done!</div>
+            <button class="restart-btn" id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
